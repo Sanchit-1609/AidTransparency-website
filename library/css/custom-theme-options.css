@@ -1,0 +1,40 @@
+#custom-theme-options-tabs{
+  margin-top: 40px;
+}
+
+#custom-theme-options-tabs ul{
+    border-bottom: 1px solid #666;
+    overflow: auto;
+}
+#custom-theme-options-tabs ul li{
+    float: left;
+    display: inline;
+    padding: 5px 10px;
+    border: 1px solid #666;
+    background-color: #f1f1f1;
+    border-bottom: none;
+    margin: 0 5px 0 0;
+}
+#custom-theme-options-tabs ul li:hover,
+#custom-theme-options-tabs ul li.ui-tabs-active,
+#custom-theme-options-tabs ul li.ui-state-active{
+    background-color: #fff;
+}
+
+#custom-theme-options-tabs ul li a{
+    text-decoration: none;
+}
+
+#custom-theme-options-tabs div{
+    padding-top: 20px;
+}
+
+#custom-theme-options-tabs input,
+#custom-theme-options-tabs textarea{
+    width: 80%;
+
+}
+#custom-theme-options-tabs textarea{
+    min-height: 70px;
+
+}
