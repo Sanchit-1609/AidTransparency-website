@@ -31,5 +31,8 @@
     <!--.footer-inner -->
 </footer><!--#footer -->
 <?php wp_footer(); ?>
+
+<!-- DO NOT REMOVE: theideabureau-page-loaded -->
+
 </body>
 </html>
