@@ -23,14 +23,17 @@ jQuery(document).ready(function($) {
         AidtransparencyJS.Vimeo.loadVimeo(this);
     });
 
-    //Fix main navigation hovers
-    $('ul.menu-main').on('hover', 'li', function(){
-        //Get proceeding link...
-        var $leftAdjacent = $(this).prev();
-        if($leftAdjacent.length = 1){
-            $leftAdjacent.toggleClass('left-adjacent');
-        }
-    });
+    // 11/07/17 - BEN EVERARD: REMOVED DUE TO CPU/MEMORY LEAK
+    /*
+        //Fix main navigation hovers
+        $('ul.menu-main').on('hover', 'li', function(){
+            //Get proceeding link...
+            var $leftAdjacent = $(this).prev();
+            if($leftAdjacent.length = 1){
+                $leftAdjacent.toggleClass('left-adjacent');
+            }
+        });
+    */
 
     //Add icon css for external files...
     var $resourceWrapper = $('.resources-wrapper');
