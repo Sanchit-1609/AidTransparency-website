@@ -5,10 +5,6 @@ Template Name: Front Page
 ?>
 <?php get_header(); ?>
 
-<div id="home-strapline">
-    <?php //echo types_render_field("home_page_strapline", array('raw' => false));?>
-</div>
-
 <div id="primary">
 
     <div id="home-featured">

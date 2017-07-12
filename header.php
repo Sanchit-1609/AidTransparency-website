@@ -43,6 +43,9 @@ if ( is_singular() && get_option( 'thread_comments' ) ) {
 }
 wp_head();
 ?>
+
+<style>#header { margin-bottom: 4em; }</style>
+
 <body <?php body_class(); ?>>
     <a id="top"></a>
     <?php iati_print_dev_warning(); ?>
