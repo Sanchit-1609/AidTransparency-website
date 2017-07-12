@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /**
  * @category    Sweetapple
@@ -11,15 +11,15 @@
  ?>
 <div id="home-icon-panels">
     <div class="icon transparency">
-        <?php //echo types_render_field("home_page_aidtransparency", array( 'raw' => false ) );?>
+        <?php echo types_render_field("home_page_aidtransparency", array( 'raw' => false ) );?>
     </div>
     <div class="icon standard">
-        <?php //echo types_render_field("home_page_iatistandard", array( 'raw' => false ) );?>
+        <?php echo types_render_field("home_page_iatistandard", array( 'raw' => false ) );?>
     </div>
     <div class="icon registry">
-        <?php //echo types_render_field("home_page_iatiregistry", array( 'raw' => false ) );?>
+        <?php echo types_render_field("home_page_iatiregistry", array( 'raw' => false ) );?>
     </div>
     <div class="icon community">
-        <?php //echo types_render_field("home_page_iaticommunity", array( 'raw' => false ) );?>
+        <?php echo types_render_field("home_page_iaticommunity", array( 'raw' => false ) );?>
     </div>
 </div><!--#home-icon-panels -->
