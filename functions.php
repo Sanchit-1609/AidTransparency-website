@@ -18,7 +18,22 @@ require_once(THEME_LIB . '/metaboxes/resources.php'); // generic helper function
 require_once(THEME_LIB . '/metaboxes/archives.php'); // generic helper functions
 require_once(THEME_LIB . '/iati_functions.php'); // iati specific theme options
 
+// CHROME PASSWORD BUG
+// https://premium.wpmudev.org/blog/fixing-password-empty-wordpress-chrome-error/
 
+add_action("login_form", "kill_wp_attempt_focus_start");
+function kill_wp_attempt_focus_start() {
+    ob_start("kill_wp_attempt_focus_replace");
+}
+
+function kill_wp_attempt_focus_replace($html) {
+    return preg_replace("/d.value = '';/", "", $html);
+}
+
+add_action("login_footer", "kill_wp_attempt_focus_end");
+function kill_wp_attempt_focus_end() {
+    ob_end_flush();
+}
 
 /**
  * Tell WordPress to run aidtransparency_setup() when the 'after_setup_theme' hook is run.
