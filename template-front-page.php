@@ -16,10 +16,7 @@ Template Name: Front Page
 
     <div id="home-vimeo">
         <h2 class="section-header"><?php _e('Videos'); ?></h2>
-        <?php aidtransparency_print_vimeo_videos($post);?>
-        <?php _e('View other videos on our'); ?> <a
-            href="<?php echo sweetapple_get_theme_option('vimeo_url_social'); ?>"
-            target="_blank">Vimeo</a> <?php _e('channel'); ?>.
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cfjxWLB9kpE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div><!--#content-wrapper -->
 </div><!--#home-vimeo -->
 
