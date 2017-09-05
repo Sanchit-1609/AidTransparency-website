@@ -16,7 +16,7 @@ Template Name: Front Page
 
     <div id="home-vimeo">
         <h2 class="section-header"><?php _e('Videos'); ?></h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/cfjxWLB9kpE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="620" height="345" src="https://www.youtube.com/embed/cfjxWLB9kpE?rel=0" frameborder="0" allowfullscreen></iframe>
     </div><!--#content-wrapper -->
 </div><!--#home-vimeo -->
 
