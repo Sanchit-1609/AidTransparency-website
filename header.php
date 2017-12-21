@@ -4,47 +4,62 @@
 <!--[if IE 8 ]>    <html class="no-js ie8" <?php language_attributes(); ?>> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<!--<meta name="viewport" content="width=device-width,initial-scale=auto">-->
 
-<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-Remove this if you use the .htaccess -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<!--<meta name="viewport" content="width=device-width,initial-scale=auto">-->
 
-<title><?php
-    /*
-     * Print the <title> tag based on what is being viewed.
-     */
-    global $page, $paged;
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+	Remove this if you use the .htaccess -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    wp_title( '|', true, 'right' );
+	<title><?php
+	    /*
+	     * Print the <title> tag based on what is being viewed.
+	     */
+	    global $page, $paged;
 
-    // Add the blog name.
-    bloginfo( 'name' );
+	    wp_title( '|', true, 'right' );
 
-    // Add the blog description for the home/front page.
-    $site_description = get_bloginfo( 'description', 'display' );
-    if ( $site_description && ( is_home() || is_front_page() ) )
-        echo " | $site_description";
+	    // Add the blog name.
+	    bloginfo( 'name' );
 
-    // Add a page number if necessary:
-    if ( $paged >= 2 || $page >= 2 )
-        echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
+	    // Add the blog description for the home/front page.
+	    $site_description = get_bloginfo( 'description', 'display' );
+	    if ( $site_description && ( is_home() || is_front_page() ) )
+	        echo " | $site_description";
 
-    ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<?php
-/* We add some JavaScript to pages with the comment form
- * to support sites with threaded comments (when in use).
- */
-if ( is_singular() && get_option( 'thread_comments' ) ) {
-    wp_enqueue_script( 'comment-reply' );
-}
-wp_head();
-?>
+	    // Add a page number if necessary:
+	    if ( $paged >= 2 || $page >= 2 )
+	        echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
 
-<style>#header { margin-bottom: 4em; }</style>
+	    ?>
+	</title>
+
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<?php
+	/* We add some JavaScript to pages with the comment form
+	 * to support sites with threaded comments (when in use).
+	 */
+	if ( is_singular() && get_option( 'thread_comments' ) ) {
+	    wp_enqueue_script( 'comment-reply' );
+	}
+	wp_head();
+	?>
+
+	<style>#header { margin-bottom: 4em; }</style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6109435-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-6109435-3');
+	</script>
+
+</head>
 
 <body <?php body_class(); ?>>
     <a id="top"></a>
