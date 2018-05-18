@@ -11,6 +11,9 @@
             <li>
                 <a href="<?php echo get_permalink(172); ?>">Site map</a>
             </li>
+            <li>
+                <a href="<?php echo get_permalink(6402); ?>">Privacy policy</a>
+            </li>
         </ul>
     </div>
 
