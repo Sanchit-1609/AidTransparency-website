@@ -14,6 +14,9 @@
             <li>
                 <a href="<?php echo get_permalink(6402); ?>">Privacy policy</a>
             </li>
+            <li>
+                <a href="<?php echo get_permalink(6415); ?>">Cookie policy</a>
+            </li>
         </ul>
     </div>
 
