@@ -66,6 +66,24 @@
     <?php iati_print_dev_warning(); ?>
     <div id="page">
         <div id="header">
+
+			<style>
+
+				.header-message {
+					background-color: #f7fbb9;
+					padding: 8px;
+				}
+
+				.header-message p {
+					margin: 0;
+				}
+
+			</style>
+
+			<div class="header-message">
+				<p>The content of <a href="http://aidtransparency.net/">aidtransparency.net</a> has been merged into IATI’s brand new website: <a href="http://iatistandard.org/">iatistandard.org</a> and <a href="http://aidtransparency.org/">aidtransparency.org</a> will be switched off on Friday 20 July. Please email <a href="mailto:support@iatistandard.org">support@iatistandard.org</a> with any questions about this move</p>
+			</div>
+
             <div class="header-wrapper">
                 <a id="logo" href="<?php bloginfo('url'); ?>"><?php echo esc_attr( get_bloginfo( 'name' ) ); ?></a>
 
