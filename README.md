@@ -1,3 +1,7 @@
+# NOTE
+
+This application is deprecated and no longer maintained. The repository has been archived.
+
 AidTransparency-website
 =======================
 
